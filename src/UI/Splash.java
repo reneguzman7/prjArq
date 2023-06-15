@@ -1,11 +1,18 @@
 package UI;
 
 import javax.swing.JFrame;
+import javax.swing.JWindow;
 
-public class Splash extends JFrame {
+public class Splash {
+
+    JWindow jw;
     
-    public Splash(String title){
-        super(title);
+    public Splash(){
+        
+        jw = new JWindow();
+
+        jw.getContentPane().add(new JLabel(new ImageIcon("src\\UI\\img\\splash.png")));
+        Dimension screenSize = Toolkit.getDefaultToolkit().getScreenSize();
 
         setPersonalization();
         
@@ -21,6 +28,9 @@ public class Splash extends JFrame {
         // super.pack();
         
 
+    }
+
+    public void show(int i) {
     }
 
 }
