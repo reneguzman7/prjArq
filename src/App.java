@@ -4,13 +4,17 @@ import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 
+import BL.Entities.Pez;
 import UI.PathFrame;
 import UI.Splash;
 
 public class App {
-    public static void main(String[] args) throws Exception {
+    public static void main(String[] args) {
 
-        var jf = new PathFrame();
+        Pez nemo = new Pez();
+        nemo.nadar();
+
+        // var jf = new PathFrame();
         
         //jf.show();
 
